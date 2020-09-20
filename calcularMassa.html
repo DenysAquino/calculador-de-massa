@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="calcularMassa.css">
+    <title>Calculador de IMC</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="http://www.saude.gov.br/component/content/article/804-imc/40509-imc-em-adultos#:~:text=Os%20par%C3%A2metros%20indicados%20pelo%20Minist%C3%A9rio,cintura%20ou%20circunfer%C3%AAncia%20da%20cintura.">Ministerio da Saúde</a> </li>
+                <li><a href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal">Mais informações</a></li>
+                <li><a href="mailto:denysultra@hotmail.com">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="calculador">
+            <div class="item-calculador">
+                <h1>Calcular IMC<br>(Índice de massa corporal)</h1>
+                <label for="peso"> Peso : </label><input type="number" id="peso" placeholder="Seu peso...">
+                <label for="altura"> Altura : </label><input type="number" id="altura" placeholder="Sua altura...">
+                <input type="button" name="button" onclick="calcular()" value="Calcular">
+            </div>
+            <div class="item-resultado">
+                <img src="" alt="" id="imagem">
+                <div id="res"></div>    
+            </div>
+        </section>
+            
+    </main>
+    <footer>
+        <div class="rodape">
+            <p>© Desenvolvido por Denys(Dev)</p>
+        </div>
+    </footer>
+
+    <script src="calcularMassa.js"></script>
+
+
+</body>
+
+</html>
